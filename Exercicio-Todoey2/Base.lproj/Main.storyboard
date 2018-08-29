@@ -31,7 +31,14 @@
                             <outlet property="delegate" destination="6lg-Pf-9kZ" id="p8a-a7-X7y"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Tarefas" id="gi3-5C-1vq"/>
+                    <navigationItem key="navigationItem" title="Tarefas" id="gi3-5C-1vq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DCA-wm-k6K">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="6lg-Pf-9kZ" id="BEj-Ii-1Uj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FXX-MT-HBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
